@@ -1,15 +1,15 @@
 <!doctype html>
-<html lang="en" class="bg-gray-200">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="./src/output.css" />
   </head>
-  <body class="mx-auto min-h-screen max-w-6xl bg-gray-50 shadow-xl">
-    <header class="bg-white px-6 sm:px-10">
+  <body class="min-h-screen">
+    <header class="bg-white">
       <nav
-        class="mx-auto flex max-w-6xl items-center gap-4 py-5 text-sm text-gray-700"
+        class="mx-auto flex max-w-6xl items-center gap-4 px-6 py-4 text-sm text-gray-700 sm:px-10"
       >
         <h1 class="text-lg font-bold tracking-tight text-gray-900">
           Rabia Asif
@@ -41,81 +41,91 @@
     <main class="bg-white">
       <section
         id="home"
-        class="mx-auto grid min-h-[420px] max-w-6xl items-center gap-12 bg-white px-6 py-14 sm:grid-cols-[1fr_auto] sm:px-10"
+        class="bg-white pt-6 pb-8 sm:pt-10 sm:pb-12"
       >
-        <div>
-          <h2
-            class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl"
-          >
-            Hi, I'm a Frontend Developer.
-          </h2>
-          <p
-            class="mt-4 max-w-2xl text-sm leading-6 text-gray-600 sm:text-base"
-          >
-            I create clean, modern, and responsive websites with a strong focus
-            on design, performance, and user experience. I turn ideas into
-            engaging digital experiences using modern web technologies.
-          </p>
-          <div class="mt-6 flex items-center gap-4">
-            <img
-              class="h-5 w-5 object-contain"
-              src="./src/icons/github.png"
-              alt="GitHub"
-            />
-            <img
-              class="h-5 w-5 object-contain"
-              src="./src/icons/twiter.png"
-              alt="Twitter"
-            />
-            <img
-              class="h-5 w-5 object-contain"
-              src="./src/icons/figma.png"
-              alt="Figma"
-            />
-          </div>
-        </div>
-        <div class="justify-self-center sm:justify-self-end">
-          <img
-            class="h-44 w-44 object-cover shadow-[14px_14px_0_#e5e7eb] sm:h-52 sm:w-52"
-            src="./src/images/profile.jpeg"
-            alt="Rabia Asif"
-          />
-        </div>
-      </section>
-      <section id="about" class="bg-gray-50 px-6 py-14 text-gray-700 sm:px-10">
-        <span
-          class="mx-auto block w-fit rounded-full bg-gray-200 px-3 py-1 text-xs font-medium"
-          >About me</span
-        >
         <div
-          class="mx-auto mt-8 grid max-w-6xl items-center gap-10 sm:grid-cols-2 sm:gap-14"
+          class="mx-auto grid min-h-auto max-w-6xl items-center gap-10 px-6 sm:grid-cols-[1fr_auto] sm:gap-16 sm:px-10"
         >
-          <div class="justify-self-center sm:justify-self-start">
+          <div class="max-w-2xl sm:py-4">
+            <h2
+              class="text-4xl font-bold leading-tight tracking-tight text-gray-900 sm:text-5xl"
+            >
+              Hi, I'm a Frontend Developer.
+            </h2>
+            <p
+              class="mt-5 max-w-xl text-base leading-7 text-gray-600 sm:text-lg sm:leading-8"
+            >
+              I create clean, modern, and responsive websites with a strong
+              focus on design, performance, and user experience. I turn ideas
+              into engaging digital experiences using modern web technologies.
+            </p>
+            <div class="mt-7 flex items-center gap-4">
+              <img
+                class="h-5 w-5 object-contain"
+                src="./src/icons/github.png"
+                alt="GitHub"
+              />
+              <img
+                class="h-5 w-5 object-contain"
+                src="./src/icons/twiter.png"
+                alt="Twitter"
+              />
+              <img
+                class="h-5 w-5 object-contain"
+                src="./src/icons/figma.png"
+                alt="Figma"
+              />
+            </div>
+          </div>
+          <div class="justify-self-center sm:justify-self-end">
             <img
-              class="h-56 w-56 object-cover shadow-[14px_14px_0_#e5e7eb] sm:h-64 sm:w-64"
-              src="./src/images/profile2.jpeg"
+              class="h-52 w-52 object-cover shadow-[14px_14px_0_#e5e7eb] sm:h-60 sm:w-60"
+              src="./src/images/profile.jpeg"
               alt="Rabia Asif"
             />
           </div>
-          <div>
-            <h2 class="text-xl font-semibold tracking-tight text-gray-900">
-              Curious about me? Here you have it
-            </h2>
-            <p class="mt-4 text-sm leading-6 text-gray-600">
-              ## About Me I'm a Frontend Developer who enjoys creating clean,
-              responsive, and user-friendly websites. I work with HTML, CSS,
-              Tailwind CSS, and JavaScript to turn ideas into simple and
-              engaging web experiences. I enjoy learning new things, improving
-              my coding skills, and exploring better ways to build websites. My
-              goal is to create designs that look good, work smoothly, and
-              provide a great experience across different devices.
-            </p>
+        </div>
+      </section>
+      <section id="about" class="bg-gray-50 py-10 text-gray-700">
+        <div class="mx-auto max-w-6xl px-6 sm:px-10">
+          <span
+            class="mx-auto block w-fit rounded-full bg-gray-200 px-4 py-1 text-xs font-medium"
+            >About me</span
+          >
+          <div class="mt-6 grid items-center gap-8 sm:grid-cols-2 sm:gap-10">
+            <div class="justify-self-center sm:justify-self-start">
+              <img
+                class="h-72 w-72 object-cover shadow-[14px_14px_0_#e5e7eb] sm:h-[400px] sm:w-[400px]"
+                src="./src/images/profile2.jpeg"
+                alt="Rabia Asif"
+              />
+            </div>
+            <div>
+              <h2 class="text-xl font-semibold tracking-tight text-gray-900">
+                Curious about me? Here you have it
+              </h2>
+              <p class="mt-4 text-sm leading-6 text-gray-600">
+                I'm a Frontend Developer who enjoys creating clean, responsive,
+                and user-friendly websites. I work with HTML, CSS, Tailwind CSS,
+                and JavaScript to turn ideas into simple and engaging web
+                experiences. I enjoy learning new things, improving my coding
+                skills, and exploring better ways to build websites. My goal is
+                to create designs that look good, work smoothly, and provide a
+                great experience across different devices.
+              </p>
+              <p class="mt-3 text-sm leading-6 text-gray-600">
+                I also pay attention to the small details that make a website
+                easier to use, from clear layouts to consistent spacing. I’m
+                always looking for opportunities to grow as a developer and
+                build thoughtful digital experiences.
+              </p>
+            </div>
           </div>
         </div>
       </section>
-      <section id="skill" class="bg-white px-4 py-12 text-center text-gray-700">
-        <div class="mx-auto max-w-4xl">
-          <span class="rounded-full bg-gray-100 px-3 py-1.5 text-sm font-medium"
+      <section id="skill" class="bg-white py-12 text-center text-gray-700">
+        <div class="mx-auto max-w-6xl px-6 sm:px-10">
+          <span class="rounded-full bg-gray-100 px-4 py-1 text-sm font-medium"
             >Skills</span
           >
           <p class="mt-4 text-base text-gray-600">
@@ -193,12 +203,12 @@
       </section>
       <section
         id="projects"
-        class="bg-gray-50 px-6 py-14 text-gray-700 sm:px-10"
+        class="bg-gray-50 py-14 text-gray-700"
       >
-        <div class="mx-auto max-w-4xl">
+        <div class="mx-auto max-w-6xl px-6 sm:px-10">
           <div class="text-center">
             <span
-              class="rounded-full bg-gray-200 px-3 py-1 text-xs font-medium"
+              class="rounded-full bg-gray-200 px-4 py-1 text-xs font-medium"
             >
               Projects
             </span>
@@ -372,32 +382,31 @@
           </div>
         </div>
       </section>
-      <section
-        id="contact"
-        class="bg-gray-50 px-4 py-12 text-center text-gray-700"
-      >
-        <span class="rounded-full bg-gray-100 px-3 py-1.5 text-sm font-medium"
-          >Get in touch</span
-        >
-        <p
-          class="mx-auto mt-4 max-w-lg text-base leading-relaxed text-gray-600"
-        >
-          What next? Feel free to reach out me if you are looking for a
-          developer, have a query, or simply want to connect.
-        </p>
-        <h3 class="mt-4 text-xl font-semibold text-gray-900">
-          <a href="mailto:rabiaasif0712@gmail.com">rabiaasif0712@gmail.com</a>
-        </h3>
-        <h3 class="mt-2 text-lg font-semibold text-gray-900">
-          <a href="tel:+923290765476">+92 3290765476</a>
-        </h3>
-        <h6 class="mt-5 text-sm text-gray-500">
-          You may also find me on these platforms
-        </h6>
-        <div class="mt-1 flex justify-center gap-2">
-          <img class="h-5 w-5" src="./src/icons/github.png" alt="GitHub" />
-          <img class="h-5 w-5" src="./src/icons/twiter.png" alt="Twitter" />
-          <img class="h-5 w-5" src="./src/icons/figma.png" alt="Figma" />
+      <section id="contact" class="bg-gray-50 py-12 text-center text-gray-700">
+        <div class="mx-auto max-w-6xl px-6 sm:px-10">
+          <span class="rounded-full bg-gray-100 px-4 py-1 text-sm font-medium"
+            >Get in touch</span
+          >
+          <p
+            class="mx-auto mt-4 max-w-lg text-base leading-relaxed text-gray-600"
+          >
+            What next? Feel free to reach out me if you are looking for a
+            developer, have a query, or simply want to connect.
+          </p>
+          <h3 class="mt-4 text-xl font-semibold text-gray-900">
+            <a href="mailto:rabiaasif0712@gmail.com">rabiaasif0712@gmail.com</a>
+          </h3>
+          <h3 class="mt-2 text-lg font-semibold text-gray-900">
+            <a href="tel:+923290765476">+92 3290765476</a>
+          </h3>
+          <h6 class="mt-5 text-sm text-gray-500">
+            You may also find me on these platforms
+          </h6>
+          <div class="mt-1 flex justify-center gap-2">
+            <img class="h-5 w-5" src="./src/icons/github.png" alt="GitHub" />
+            <img class="h-5 w-5" src="./src/icons/twiter.png" alt="Twitter" />
+            <img class="h-5 w-5" src="./src/icons/figma.png" alt="Figma" />
+          </div>
         </div>
       </section>
     </main>
