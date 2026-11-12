@@ -136,21 +136,18 @@
             </div>
 
             <div class="mt-8 flex items-center gap-4">
-              <img
-                class="h-5 w-5 object-contain"
-                src="./src/icons/github.png"
-                alt="GitHub"
-              />
-              <img
-                class="h-5 w-5 object-contain"
-                src="./src/icons/twiter.png"
-                alt="Twitter"
-              />
-              <img
-                class="h-5 w-5 object-contain"
-                src="./src/icons/figma.png"
-                alt="Figma"
-              />
+              <a
+                href="https://github.com/rabiaasif0712"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit Rabia Asif on GitHub"
+              >
+                <img
+                  class="h-5 w-5 object-contain"
+                  src="./src/icons/github.png"
+                  alt="GitHub"
+                />
+              </a>
             </div>
           </div>
 
@@ -711,7 +708,9 @@
               </p>
 
               <a
-                href="mailto:rabiaasif0712@gmail.com"
+                href="https://wa.me/923290386076"
+                target="_blank"
+                rel="noopener noreferrer"
                 class="mt-7 inline-flex items-center gap-3 rounded-lg bg-white px-5 py-3 text-sm font-semibold text-gray-900 transition hover:bg-gray-200"
               >
                 Let's talk
@@ -719,74 +718,196 @@
               </a>
             </div>
 
-            <div class="grid gap-4 p-5 sm:grid-cols-2 sm:p-8">
-              <!-- EMAIL -->
-              <div
-                class="rounded-xl border border-gray-200 p-5 transition hover:border-gray-400 hover:shadow-sm"
-              >
-                <p
-                  class="mb-2 text-xs font-medium uppercase tracking-widest text-gray-500"
+            <form
+              action="https://formsubmit.co/rabiaasif0712@gmail.com"
+              method="POST"
+              class="space-y-5 p-5 sm:p-8"
+            >
+              <input
+                type="hidden"
+                name="_subject"
+                value="New portfolio contact message"
+              />
+              <input
+                type="text"
+                name="_honey"
+                class="hidden"
+                tabindex="-1"
+                autocomplete="off"
+              />
+
+              <div>
+                <label
+                  for="contact-name"
+                  class="mb-2 block text-sm font-medium text-gray-700"
+                >
+                  Name
+                </label>
+                <input
+                  id="contact-name"
+                  name="name"
+                  type="text"
+                  autocomplete="name"
+                  required
+                  class="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm text-gray-900 outline-none transition placeholder:text-gray-400 focus:border-gray-900 focus:ring-2 focus:ring-gray-200"
+                  placeholder="Your name"
+                />
+              </div>
+
+              <div>
+                <label
+                  for="contact-email"
+                  class="mb-2 block text-sm font-medium text-gray-700"
                 >
                   Email
-                </p>
-
-                <a
-                  href="mailto:rabiaasif0712@gmail.com"
-                  class="break-all text-sm font-medium text-gray-900 transition hover:text-gray-500 sm:text-base"
-                >
-                  rabiaasif0712@gmail.com
-                </a>
+                </label>
+                <input
+                  id="contact-email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                  class="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm text-gray-900 outline-none transition placeholder:text-gray-400 focus:border-gray-900 focus:ring-2 focus:ring-gray-200"
+                  placeholder="you@example.com"
+                />
               </div>
 
-              <!-- PHONE -->
-              <div
-                class="rounded-xl border border-gray-200 p-5 transition hover:border-gray-400 hover:shadow-sm"
+              <div>
+                <label
+                  for="contact-phone"
+                  class="mb-2 block text-sm font-medium text-gray-700"
+                >
+                  Phone number
+                </label>
+                <input
+                  id="contact-phone"
+                  name="phone"
+                  type="tel"
+                  autocomplete="tel"
+                  required
+                  class="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm text-gray-900 outline-none transition placeholder:text-gray-400 focus:border-gray-900 focus:ring-2 focus:ring-gray-200"
+                  placeholder="+92 300 1234567"
+                />
+              </div>
+
+              <div>
+                <label
+                  for="contact-message"
+                  class="mb-2 block text-sm font-medium text-gray-700"
+                >
+                  Message
+                </label>
+                <textarea
+                  id="contact-message"
+                  name="message"
+                  rows="4"
+                  required
+                  class="w-full resize-y rounded-lg border border-gray-300 px-4 py-3 text-sm text-gray-900 outline-none transition placeholder:text-gray-400 focus:border-gray-900 focus:ring-2 focus:ring-gray-200"
+                  placeholder="How can I help?"
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="inline-flex items-center gap-2 rounded-lg bg-gray-900 px-5 py-3 text-sm font-medium text-white transition hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2"
               >
-                <p
-                  class="mb-2 text-xs font-medium uppercase tracking-widest text-gray-500"
-                >
-                  Phone
-                </p>
-
-                <a
-                  href="tel:+923290765476"
-                  class="text-sm font-medium text-gray-900 transition hover:text-gray-500 sm:text-base"
-                >
-                  +92 329 0765476
-                </a>
-              </div>
-
-              <!-- GITHUB -->
-              <div
-                class="rounded-xl border border-gray-200 p-5 transition hover:border-gray-400 hover:shadow-sm sm:col-span-2"
-              >
-                <p
-                  class="mb-2 text-xs font-medium uppercase tracking-widest text-gray-500"
-                >
-                  GitHub
-                </p>
-
-                <a
-                  href="https://github.com/rabiaasif0712"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="inline-flex items-center gap-2 text-sm font-medium text-gray-900 transition hover:text-gray-500 sm:text-base"
-                >
-                  github.com/rabiaasif0712
-                  <span aria-hidden="true">↗</span>
-                </a>
-              </div>
-            </div>
+                Send message
+                <span aria-hidden="true">↗</span>
+              </button>
+              <p class="text-xs leading-5 text-gray-500">
+                Messages are delivered to Rabia's Gmail through FormSubmit. The
+                first submission requires confirming the activation email sent
+                by FormSubmit.
+              </p>
+            </form>
           </div>
         </div>
       </section>
     </main>
 
     <!-- FOOTER -->
-    <footer
-      class="flex flex-wrap items-center justify-center gap-x-1 bg-gray-900 px-4 py-6 text-lg text-white"
-    >
-      &copy; 2026 | Designed and coded with ❤️ by Rabia Asif
+    <footer class="bg-gray-900 text-white">
+      <div class="mx-auto grid max-w-6xl gap-10 px-6 py-12 sm:px-10 sm:py-16 md:grid-cols-[1.4fr_0.8fr_0.8fr]">
+        <div>
+          <a
+            href="#home"
+            class="inline-flex items-center gap-3 rounded-lg"
+            aria-label="Rabia Asif, back to home"
+          >
+            <span
+              class="grid h-11 w-11 place-items-center rounded-xl border border-white/15 bg-white/10 text-sm font-bold"
+            >
+              RA
+            </span>
+            <span class="text-lg font-semibold tracking-tight">Rabia Asif</span>
+          </a>
+          <p class="mt-4 max-w-sm text-sm leading-7 text-gray-400">
+            Full Stack Engineer crafting thoughtful, responsive digital
+            experiences from idea to launch.
+          </p>
+        </div>
+
+        <nav aria-label="Footer navigation">
+          <h2 class="text-sm font-semibold">Explore</h2>
+          <ul class="mt-4 space-y-3 text-sm text-gray-400">
+            <li><a class="transition hover:text-white" href="#home">Home</a></li>
+            <li><a class="transition hover:text-white" href="#about">About</a></li>
+            <li><a class="transition hover:text-white" href="#projects">Projects</a></li>
+            <li><a class="transition hover:text-white" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <h2 class="text-sm font-semibold">Let's connect</h2>
+          <ul class="mt-4 space-y-3 text-sm text-gray-400">
+            <li>
+              <a
+                class="transition hover:text-white"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=rabiaasif0712%40gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Gmail
+              </a>
+            </li>
+            <li>
+              <a
+                class="transition hover:text-white"
+                href="https://wa.me/923290386076"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Chat with Rabia Asif on WhatsApp"
+              >
+                WhatsApp
+              </a>
+            </li>
+            <li>
+              <a
+                class="transition hover:text-white"
+                href="https://github.com/rabiaasif0712"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-white/10">
+        <div
+          class="mx-auto flex max-w-6xl flex-col gap-3 px-6 py-5 text-xs text-gray-400 sm:flex-row sm:items-center sm:justify-between sm:px-10"
+        >
+          <p>&copy; 2026 Rabia Asif. All rights reserved.</p>
+          <a
+            href="#home"
+            class="inline-flex w-fit items-center gap-2 transition hover:text-white"
+          >
+            Back to top <span aria-hidden="true">↑</span>
+          </a>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
